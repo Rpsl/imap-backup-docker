@@ -33,6 +33,11 @@ $ docker run --rm -it -v $(PWD)/data:/root/.imap-backup/ --name "imap-backup" rp
 
 For additional options see [configuration-file](https://github.com/joeyates/imap-backup#configuration-file) in "imap-backup" documentation
 
+# Usage
+```
+$ docker run --rm -it -v $(PWD)/data:/root/.imap-backup/ --name "imap-backup" rpsl/imap-backup:latest
+```
+
 # Images
 
 ## Docker hub
