@@ -12,7 +12,7 @@ You need to create config file in data folder.
 $ docker run --rm -it -v $(PWD)/data:/root/.imap-backup/ --name "imap-backup" rpsl/imap-backup:latest imap-backup setup
 ```
 
-2) You can use example and you need manualy create `config.json` file in `data` folder
+2) You can use example and you need manually create `config.json` file in `data` folder
 
 ```
 {
@@ -35,20 +35,20 @@ For additional options see [configuration-file](https://github.com/joeyates/imap
 
 # Usage
 ```
-$ docker run --rm -it -v $(PWD)/data:/root/.imap-backup/ --name "imap-backup" rpsl/imap-backup:latest
+$ docker run --rm -it -v $(PWD)/data:/root/.imap-backup/ --name "imap-backup" rpsl/imap-backup-docker:latest
 ```
 
 # Images
 
 ## Docker hub
 ```
-docker pull rpsl/imap-backup-script:latest
+docker pull rpsl/imap-backup-docker:latest
 ```
 
 
 ## Build local
 
 ```
-docker build -t "rpsl/imap-backup" .
+docker build -t "rpsl/imap-backup-docker" .
 ```
 
