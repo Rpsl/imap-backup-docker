@@ -1,7 +1,6 @@
 #!/bin/sh
 
 echo "timezone=${TZ}"
-echo "${TZ}" >/etc/timezone
 
 echo "$(date) - start backup scheduler"
 while :; do
