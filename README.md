@@ -37,7 +37,7 @@ For additional options see [configuration-file](https://github.com/joeyates/imap
 
 ## Docker hub
 ```
-docker pull rpsl/imap-backup-script
+docker pull rpsl/imap-backup-script:latest
 ```
 
 
