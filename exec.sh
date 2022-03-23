@@ -18,7 +18,7 @@ while :; do
         # and work in root dir with another UID it's problematic
         echo "change owner to ${OWNER}"
         chown -R $OWNER /root/.imap-backup/
-    else
+    fi
 
     sleep 1d
 done
