@@ -35,7 +35,7 @@ For additional options see [configuration-file](https://github.com/joeyates/imap
 
 # Usage
 ```
-$ docker run --rm -d -v `$(PWD)`/data:/root/.imap-backup/ --name "imap-backup" rpsl/imap-backup-docker:latest
+$ docker run --rm -d -e TZ="Europe/Moscow" -v $(PWD)/data:/root/.imap-backup/ --name "imap-backup" rpsl/imap-backup-docker:latest
 ```
 
 # Images

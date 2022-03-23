@@ -1,9 +1,7 @@
 #!/bin/sh
 
-TIME_ZONE=${TIME_ZONE:=UTC}
-echo "timezone=${TIME_ZONE}"
-cp /usr/share/zoneinfo/${TIME_ZONE} /etc/localtime
-echo "${TIME_ZONE}" >/etc/timezone
+echo "timezone=${TZ}"
+echo "${TZ}" >/etc/timezone
 
 echo "$(date) - start backup scheduler"
 while :; do
