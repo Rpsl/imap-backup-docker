@@ -9,7 +9,7 @@ You need to create config file in data folder.
 1) You can generate that by imap-backup script. To do this run setup script and follow instructions
 
 ```
-$ docker run --rm -it -v $(PWD)/data:/root/.imap-backup/ --name "imap-backup" rpsl/imap-backup:latest imap-backup setup
+$ docker run --rm -it -v $(PWD)/data:/root/.imap-backup/ --name "imap-backup" rpsl/imap-backup-docker:latest imap-backup setup
 ```
 
 2) You can use example and you need manually create `config.json` file in `data` folder
