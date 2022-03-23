@@ -9,7 +9,7 @@ echo "$(date) - start backup scheduler"
 while :; do
     DATE=$(date +%Y%m%d-%H%M%S)
 
-    echo "$(date) - execute backup {DATE}"
+    echo "$(date) - execute backup ${DATE}"
     imap-backup backup
 
     echo "$(date) - sleep for 1 day"
